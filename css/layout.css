@@ -1,0 +1,15 @@
+input[type="checkbox"], input[type="radio"] {
+    line-height: normal;
+    margin: 4px 10px 0 0;
+}
+body{
+    margin-top: 1em;
+}
+#ponto thead {
+    background: #337ab7 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: bold;
+}
+#ponto thead td{
+    height: 3em;
+}

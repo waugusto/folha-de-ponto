@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+	<div class="folhaPonto">
+		<div class="container">
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">Mês de Referência</h4>
+					</div>
+					<select id="mes" class="form-control">
+						<option value="0">Janeiro</option>
+						<option value="1">Fevereiro</option>
+						<option value="2">Março</option>
+						<option value="3">Abril</option>
+						<option value="4">Maio</option>
+						<option value="5">Junho</option>
+						<option value="6">Julho</option>
+						<option value="7">Agosto</option>
+						<option value="8">Setembro</option>
+						<option value="9">Outubro</option>
+						<option value="10">Novembro</option>
+						<option value="11">Dezembro</option>
+					</select>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">Escala de Trabalho</h4>
+					</div>
+					<!-- <select id="horario"> -->
+					<select  id="horario" class="form-control">
+						<option value="0">08:00 - 12:00 - 14:00 - 18:00</option>
+						<option value="1">09:00 - 13:00 - 14:00 - 18:00</option>
+						<option value="2">08:00 - 12:00 - 13:00 - 17:00</option>
+					</select>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">Marque os Feriados:</h4>
+					</div>
+					<div id="feriados"></div>
+				</div>
+				<input value="Gerar Folha de Ponto" id="calcular" class="btn btn-primary" type="button">            
+			</div>
+			<div id="ponto" class="col-md-8"></div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/formataData.js"></script>
+	<script src="js/ponto.js"></script>
+</body>
+</html>
